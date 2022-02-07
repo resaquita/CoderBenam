@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header1">
+        <div class="div1">
+            <img class="logomb" src="images/logo3.png" alt="logo" width="400px">
+        </div>
+        <div class="div2">
+            <nav>
+                <ul id="nav_menu">
+                    <li id="nav_menu_item"><a href="index.html">home</a></li>
+                    <li id="nav_menu_item"><a href="about.html">about</a></li>
+                    <li id="nav_menu_item"><a href="music.html">music</a></li>
+                    <li id="nav_menu_item"><a href="calculator.html">rates</a></li>
+                    <li id="nav_menu_item"><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="dropbtn"><img class="menu_img" src="/images/lista.png" alt="menu" height="40px"></button>
+                    <div class="dropdown-content">
+                        <a href="index.html">home</a>
+                        <a href="about.html">about</a>
+                        <a href="music.html">music</a>
+                        <a href="calculator.html">rates</a>
+                        <a href="contact.html">contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="contact_main">
+        <div id="contact_form">
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <h1>contact form</h1><br><br>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="name or company name"><br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email"><br><br>
+                <label for="pregunta">How did you get here?</label><br>
+                <input type="checkbox" name="pregunta">youtube<br>
+                <input type="checkbox" name="pregunta">instagram<br>
+                <input type="checkbox" name="pregunta">a friend<br>
+                <input type="checkbox" name="pregunta">soundcloud<br>
+                <input type="checkbox" name="pregunta">other (specify)<br>
+                <textarea name="other" id="" cols="30" rows="1" placeholder="specify"></textarea><br><br>
+                <label for="comentarios">Message</label><br><br>
+                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+            </form>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <img src="images/logo2.png" alt="logo2" width="100px">
+        </div>
+        <div>
+            <a href="https://www.instagram.com/" target="blank"><img src="images/ig.jpg" alt="instagram Icon" width="100" height="68"></a>
+            <a href="https://www.soundcloud.com/" target="blank"><img src="images/sc.jpg" alt="soundcloud Icon" width="100" height="68"></a>
+            <a href="https://www.linkedin.com/" target="blank"><img src="images/in.jpg" alt="linkedin Icon" width="100" height="68"></a>
+            <a href="https://www.youtube.com/watch?v=eZ4Dg1CdEjk" target="blank"><img src="images/yt.jpg" alt="Youtube Icon" width="100" height="68"></a>
+        </div>
+        <div>
+            <p>©2021 Manuel Benamo</p>
+        </div>
+    </footer>
+</body>
+</html>
