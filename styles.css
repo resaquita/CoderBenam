@@ -2,12 +2,58 @@
   margin: 0;
   padding: 0;
 }
+/* layout */
+.body1{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:90px 84% 10%;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+.header1{
+  grid-area: header;
+}
+.main1{
+  grid-area: main;
+}
+.footer1{
+  grid-area: footer;
+}
+.body2{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:90px 90% 8%;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+.body3{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:90px 74% 8%;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+.header1{
+  grid-area: header;
+}
+.main1{
+  grid-area: main;
+}
+.footer1{
+  grid-area: footer;
+}
 /* ----------INDEX----------- */
 #bvideo {
     width: 100%;
     height: auto;
     object-fit: cover;
-    position: absolute;
+    overflow: hidden;
     left: 0;
     right: 0;
     top: 0;
@@ -19,7 +65,7 @@ body{
 }
 #main_index{
     width: 100%;
-    height: 80vh;
+    overflow: hidden;
   }
 #main_quote{
     font-family: 'Tangerine', cursive;
@@ -66,6 +112,8 @@ section button{
 #index_section_contactnow-p{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px; 
+  margin-bottom: 70px
+  ;
 }
 #index_section_contactnow-a{
   text-decoration: none;
@@ -73,8 +121,13 @@ section button{
 /* -------------------HEADER-------------- */
 .header1{
   background-color: black;
-  height: 95px;
   width: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 15px 30px -10px;
+  z-index: 1;
+  
+}
+.header2{
+  height: 90px;
 }
 #nav_menu{
   text-transform: capitalize;
@@ -133,14 +186,11 @@ footer div{
 
 /* -------------------ABOUT.HTML-------------- */
 
-#main_about{
-  height: 900px;
-  width: 100%;
-}
 .sec_about{
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-bottom: 20px;
 }
 .h1_main{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -243,13 +293,14 @@ footer div{
   
   /* -------------------CALCULATOR.HTML-------------- */
 
-  #main_calculator{
+  /* #main_calculator{
     width: 100%;
     height: 600px;
-  }
+  } */
   .sec_calculator{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
   #theform {
     display:inline-block;
@@ -289,7 +340,6 @@ footer div{
   text-transform: capitalize;
   text-shadow: 1px 3px 10px gray ;
   font-size: 70px;
-  background-color: red;
   padding: 10px;
   padding-left: 70px;
 } */
@@ -301,12 +351,13 @@ footer div{
 #main_calculator h3{
   font-size: 30px;
   text-transform: capitalize;
+
 }
 /* -------------------CALCULATOR.HTML-------------- */
 
 /* -------------------CONTACT.HTML-------------- */
 #contact_form{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   width: 50%;
   padding: 40px;
   margin: auto;
@@ -319,10 +370,10 @@ footer div{
   text-shadow: 1px 3px 10px gray ;
   font-size: 70px;
 }
-#contact_main{
+/* #contact_main{
   height: 800px;
   width: 100%;
-}
+} */
 main h1{
   text-transform: capitalize;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -347,11 +398,18 @@ main h1{
   font-size: 25px;
   }
 }
-@media only screen and (max-width: 1190px){
-  #main_index{
-    height: 60vh;
+@media only screen and (max-width: 1260px){
+  .body1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:90px 84% 10%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
   }
 }
+
 @media only screen and (max-width: 1150px){
   .div_about{
     width: 40%;
@@ -372,9 +430,6 @@ main h1{
     color: white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  #main_index{
-    height: 55vh;
   }
   nav{
     padding: 35px;
@@ -407,9 +462,6 @@ main h1{
    flex-direction: column-reverse;
    padding: 10px;
     gap: 50px;
-  }
-  #main_index{
-    height: 50vh;
   }
   #bvideo{
     width: 100%;
@@ -471,13 +523,19 @@ main h1{
     width: 80%;
     height: 90%;
   }
+  .body2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:90px 94% 6%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
 }
 @media only screen and (max-width: 800px){
   nav ul li a{
     display: none;
-  }
-  #main_index{
-    height: 300px;
   }
   nav{
     padding: 10px;
@@ -546,6 +604,33 @@ main h1{
     display: flex;
     flex-wrap: wrap;
   }
+  .body1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:90px 60% 10%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
+  .body2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:90px 86% 8%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
+  .body3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:9% 52% 8%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
 }
 @media only screen and (max-width: 768px){
   #contact_form{
@@ -556,16 +641,13 @@ main h1{
     font-size: 15px;
     }
   #contact_form h1{
-    font-size: 25px;
+    font-size: 35px;
   }
   #contact_main{
     height: 600px;
   }
 }
 @media only screen and (max-width: 712px){
-  #main_index{
-    height: 250px;
-  }
   .sec_about{
     display: flex;
    flex-direction: column-reverse;
@@ -588,15 +670,7 @@ main h1{
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 614px){
-  #main_index{
-    height: 200px;
-  }
-}
 @media only screen and (max-width: 506px){
-  #main_index{
-    height: 150px;
-  }
   .sec_calculator p{
     width: 90%;
     margin-left: 5%;
@@ -629,10 +703,6 @@ main h1{
   nav{
     padding: 5px;
   }
-  .header1{
-    height: 85px;
-    width: 100%;
-  }
   .dropbtn {
     color: white;
     padding: 1px;
@@ -642,6 +712,9 @@ main h1{
   .menu_img{
     height: 20px;
     width: 20px;
+  }
+  .header2{
+    height: 85px;
   }
 }
 @media only screen and (max-width: 472px){
@@ -663,10 +736,10 @@ main h1{
     height: 300px;
     text-align: center;
   }
-  #main_about{
+  /* #main_about{
     height: 900px;
     width: 100%;
-  }
+  } */
   .sec_calculator p{
     margin-bottom: 50px;
   }
@@ -699,11 +772,6 @@ main h1{
     font-size: 20px; 
   }
 }
-@media only screen and (max-width: 428px){
-  #main_index{
-    height: 120px;
-  }
-}
 @media only screen and (max-width: 400px){
   #theform {
     display:inline-block;
@@ -720,6 +788,33 @@ main h1{
  }
  #music_soundcloud_p{
   font-size: 15px;
+  }
+  .body3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:9% 58% 8%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
+  .body1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:80px 54% 10%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
+  .body2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:80px 86% 8%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
   }
 }
 @media only screen and (max-width: 382px){
@@ -740,12 +835,8 @@ main h1{
 @media only screen and (max-width: 360px){
   nav{
     padding: 5px;
-    
   }
-  .header1{
-    height: 75px;
-    width: 100%;
-  }
+  
   .dropbtn {
     color: white;
     padding: 1px;
@@ -767,5 +858,19 @@ main h1{
   }
   #main_index{
     height: 100px;
+  }
+}
+@media only screen and (max-width: 321px){
+  .header1{
+    height: 70px;
+  }
+  .body1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:70px 54% 10%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
   }
 }
