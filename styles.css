@@ -14,6 +14,9 @@
 }
 .header1{
   grid-area: header;
+  background: rgb(0,95,255);
+background: linear-gradient(0deg, rgba(0,95,255,1) 0%, rgba(0,52,255,0) 100%);
+  
 }
 .main1{
   grid-area: main;
@@ -41,6 +44,7 @@
 }
 .header1{
   grid-area: header;
+  
 }
 .main1{
   grid-area: main;
@@ -109,6 +113,11 @@ section button{
   padding: 10px 10px;
   text-align: center;
 }
+.contact_button:hover{
+transform: scale(1.1);
+transition: all 0.4s;
+
+}
 #index_section_contactnow-p{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px; 
@@ -123,8 +132,11 @@ section button{
   background-color: black;
   width: 100%;
   box-shadow: rgb(38, 57, 77) 0px 15px 30px -10px;
-  z-index: 1;
-  
+  z-index: 1; 
+}
+.logomb:hover{
+  transform: scale(1.03);
+  transition: all 0.3s;
 }
 .header2{
   height: 90px;
@@ -202,6 +214,19 @@ footer div{
   padding-left: 70px;
   padding-bottom: 30px;
   padding-right: 0;
+  color: #000000;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+@keyframes aparecer{
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
 }
 .div_about{
   width: 40%;
@@ -768,6 +793,7 @@ main h1{
     width: 180px;
     padding: 10px 8px;
   }
+
   #index_section_contactnow-p{
     font-size: 20px; 
   }
