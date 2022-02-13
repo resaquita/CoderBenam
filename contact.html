@@ -6,74 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="styles.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+<script src="https://kit.fontawesome.com/46cbca915d.js" crossorigin="anonymous"></script>
 <body class="body1">
     <header class="header1">
-        <div class="div1">
-            <a href="index.html"><img class="logomb" src="images/logo3.png" alt="logo" width="400px"></a>
-        </div>
         <div class="div2">
-            <nav>
-                <ul id="nav_menu">
-                    <li id="nav_menu_item"><a href="index.html">home</a></li>
-                    <li id="nav_menu_item"><a href="about.html">about</a></li>
-                    <li id="nav_menu_item"><a href="music.html">music</a></li>
-                    <li id="nav_menu_item"><a href="calculator.html">rates</a></li>
-                    <li id="nav_menu_item"><a href="contact.html">contact</a></li>
-                </ul>
-                <div class="dropdown">
-                    <button class="dropbtn"><img class="menu_img" src="images/lista.png" alt="menu" height="40px"></button>
-                    <div class="dropdown-content">
-                        <a href="index.html">home</a>
-                        <a href="about.html">about</a>
-                        <a href="music.html">music</a>
-                        <a href="calculator.html">rates</a>
-                        <a href="contact.html">contact</a>
-                    </div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><a href="index.html"><img class="logomb" src="images/logo3.png" alt="logo" width="400px"></a></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="music.html">Music</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Rates</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </div>
     </header>
     <main class="main1" id="contact_main">
+        <h1 class="h1_main">contact form</h1>
         <div id="contact_form">
-            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-                <h1 class="h1_main">contact form</h1><br><br>
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="name or company name"><br><br>
-                <label for="email">Email</label>
-                <input type="email" name="email"><br><br>
-                <label for="pregunta">How did you get here?</label><br>
-                <input type="checkbox" name="pregunta">youtube<br>
-                <input type="checkbox" name="pregunta">instagram<br>
-                <input type="checkbox" name="pregunta">a friend<br>
-                <input type="checkbox" name="pregunta">soundcloud<br>
-                <input type="checkbox" name="pregunta">other (specify)<br>
-                <textarea name="other" id="" cols="30" rows="1" placeholder="specify"></textarea><br><br>
-                <label for="comentarios">Message</label><br><br>
-                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
-                <input type="submit" value="send">
-                <input type="reset" value="reset">
-            </form>
+            <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                  <label for="Name" class="form-label">Name</label>
+                  <input type="Name" class="form-control" id="text" placeholder="Name or Company Name" name="name">
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <label for="Hear" class="form-label">How did you get here?</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Youtube
+                    <label class="form-check-label" for="radio1"></label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Soundcloud
+                    <label class="form-check-label" for="radio2"></label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Instagram
+                    <label class="form-check-label" for="radio2"></label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Other
+                    <label class="form-check-label" for="radio2"></label>
+                    <input type="text" class="form-control" placeholder="Specify">
+                  </div>
+                  
+                <div>
+                    <label for="comment">Message:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
-        <hr>
     </main>
-    <footer class="footer1">
-        <div>
-            <img src="images/logo2.png" alt="logo2" width="100px">
-        </div>
-        <div>
-            <a href="https://www.instagram.com/" target="blank"><img src="images/ig.jpg" alt="instagram Icon" width="100" height="68"></a>
-            <a href="https://www.soundcloud.com/" target="blank"><img src="images/sc.jpg" alt="soundcloud Icon" width="100" height="68"></a>
-            <a href="https://www.linkedin.com/" target="blank"><img src="images/in.jpg" alt="linkedin Icon" width="100" height="68"></a>
-            <a href="https://www.youtube.com/watch?v=eZ4Dg1CdEjk" target="blank"><img src="images/yt.jpg" alt="Youtube Icon" width="100" height="68"></a>
-        </div>
-        <div>
-            <p>©2021 Manuel Benamo</p>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-around p-4 border-bottom">
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with me on social networks:</span>
+          </div>
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-soundcloud"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img src="images/logo2.png" alt="">
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <p>
+                    <a href="index.html" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="about.html" class="text-reset">About</a>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                
+                <p>
+                  <a href="music.html" class="text-reset">Music</a>
+                </p>
+                <p>
+                  <a href="calculator.html" class="text-reset">Rates</a>
+                </p>
+                <p>
+                  <a href="contact.html" class="text-reset">Contact</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2022 Copyright:
+          <a class="text-reset fw-bold" href="index.html">Manuel Benamo</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
