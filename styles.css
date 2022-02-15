@@ -283,6 +283,8 @@ nav ul li a{
     color:#666;
     box-shadow:inset 0 0 20px #999,3px 3px 3px #666;
     margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
  }
  .calculator_text{
    text-align: center;
@@ -300,7 +302,7 @@ nav ul li a{
  }
  .calculator_form{
    text-align: center;
-   margin-top: 20px;
+   margin-top: 40px;
  }
  .sec_calculator a{
    text-decoration: none;
@@ -598,6 +600,9 @@ form label{
   .calculator_p{
     height: 170px;
   }
+  #main_calculator p {
+    font-size: 18px;
+}
 }
 @media only screen and (max-width: 506px){
   .sec_calculator p{
@@ -779,10 +784,6 @@ form label{
 @media only screen and (max-width: 334px){
   .sec_calculator p{
     margin-bottom: 110px;
-  }
-  #main_calculator{
-    width: 100%;
-    height: 650px;
   }
   #main_index{
     height: 100px;
