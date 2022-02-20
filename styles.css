@@ -1,155 +1,150 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-/* layout */
-/* .body1{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows:5% 84% 10%;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
-}
-.header1{
-  grid-area: header;
-}
-.main1{
-  grid-area: main;
-}
-.footer1{
-  grid-area: footer;
-}
-.body2{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows:5% 90% 8%;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
-}
-.body3{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows:5% 74% 8%;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
-}
-.header1{
-  grid-area: header;
-  
-}
-.main1{
-  grid-area: main;
-}
-.footer1{
-  grid-area: footer;
-} */
+
 /* ----------INDEX----------- */
 #bvideo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-body{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+body {
   background-color: white;
 }
-#main_index{
-    width: 100%;
-    overflow: hidden;
-  }
-#main_quote{
-    font-family: 'Tangerine', cursive;
-    font-size: 60px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-  }
-#main_quote_signature{
-    font-family: 'Tangerine', cursive;
-    font-size: 35px;
-    color: white;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 2px black;
+
+#main_index {
+  width: 100%;
+  overflow: hidden;
 }
-#main_div_box{
+
+#main_quote {
+  font-family: "Tangerine", cursive;
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#main_quote_signature {
+  font-family: "Tangerine", cursive;
+  font-size: 35px;
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px black;
+}
+
+#main_div_box {
   width: 100%;
   height: 140px;
   background-color: rgba(128, 128, 128, 0.5);
 }
-#index_section_contactnow{
+
+#index_section_contactnow {
   background-color: white;
   width: 100%;
   height: 300px;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 40px;
 }
-#index_section_contactnow div{
-padding: 20px;
+
+#index_section_contactnow div {
+  padding: 20px;
 }
-section button a{
+
+section button a {
   text-transform: capitalize;
   text-decoration: none;
-  color: black ;
+  color: white;
   font-size: x-large;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
-section button{
+
+section button a:hover {
+  color: #7a406f !important;
+}
+
+section button {
   width: 200px;
   padding: 10px 10px;
   text-align: center;
-  border: 1px solid black !important;
+  border: 2px solid black !important;
 }
-.contact_button:hover{
-transform: scale(1.05);
-transition: all 0.4s;
 
+.contact_button:hover {
+  transform: scale(1.05);
+  transition: all 0.4s;
+  background-color: #f0f0f0;
 }
-#index_section_contactnow-p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px; 
-  margin-bottom: 70px
-  ;
+
+#index_section_contactnow-p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  margin-bottom: 70px;
 }
-#index_section_contactnow-a{
-  text-decoration: none;
+
+.link {
+  text-decoration: underline;
+  color: #7a406f;
 }
+
+.link:hover {
+  color: #830a2b;
+}
+
 /* -------------------HEADER-------------- */
-.header1{
+.header1 {
   width: 100%;
 }
-.logomb:hover{
+
+.logomb:hover {
   transform: scale(1.03);
   transition: all 0.3s;
 }
-nav ul li a{
-  font-size: 20px;
+
+nav {
+  background-color: #120f26;
 }
+
+nav ul li a {
+  font-size: 20px;
+  color: white !important;
+}
+
+nav ul li a:hover {
+  color: #b1b1b1 !important;
+}
+
 /* -------------------HEADER-------------- */
+.footer1 {
+  background-color: rgba(0, 18, 182, 0.03);
+}
+
+.footer2 {
+  background-color: #120f26;
+  color: #fff;
+}
 
 /* -------------------ABOUT.HTML-------------- */
-
-.sec_about{
+.sec_about {
   display: flex;
   justify-content: center;
   gap: 50px;
   margin-bottom: 20px;
 }
-.h1_main{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.h1_main {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: capitalize;
-  text-shadow: 1px 3px 10px gray ;
+  text-shadow: 1px 3px 10px gray;
   font-size: 70px;
   width: 80%;
   margin-top: 20px;
@@ -157,41 +152,40 @@ nav ul li a{
   padding-left: 70px;
   padding-bottom: 30px;
   padding-right: 0;
-  color: #000000;
+  color: #830a2b;
   animation-name: aparecer;
   animation-duration: 2s;
   animation-direction: normal;
   animation-iteration-count: 1;
 }
-@keyframes aparecer{
-0%{
-  opacity: 0;
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-100%{
-  opacity: 1;
-}
-}
-.div_about{
+.div_about {
   width: 40%;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
 }
-#img_about{
+
+#img_about {
   border: 3px solid black;
   border-radius: 3%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 /* -------------------ABOUT.HTML-------------- */
-
 /* -------------------MUSIC.HTML-------------- */
-
-#music_section_videos{
+#music_section_videos {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-areas:
-  "v1 v1"
-  "v2 v3";
+  grid-template-areas: "v1 v1" "v2 v3";
   grid-template-columns: 35% 35%;
   grid-template-rows: 60% 40%;
   justify-items: center;
@@ -201,119 +195,135 @@ nav ul li a{
   margin-bottom: 50px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  }
- 
-#v1{
-    grid-area: v1;
-    width: 100%;
-    height: 100%;
-  }
-#v2{
-    grid-area: v2;
-    width: 100%;
-    height: 100%;
-  }
-#v3{
-    grid-area: v3;
-    width: 100%;
-    height: 100%;
-  }
-#music_div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200vh;
-  }
-#music_section_soundcloud{
-    margin-top: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 900px;
-    display: flex;
-    justify-content: space-around;
-  }
-#music_section_soundcloud div{
-    width: 45%;
-    height: 90%;
-  }
- #music_soundcloud_p{
-   font-size: 30px;
-   text-align: justify;
-   overflow-wrap: break-word;
-   padding: 10px;
-  }
-#music_section_reviews{
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-.music_reviews{
-    height: 200px;
-    width: 300px;
-    border: 3px solid black;
-    margin: 10px;
-    padding: 20px;
-    overflow: hidden;
-  }
-/* -------------------MUSIC.HTML-------------- */
-  
-  /* -------------------CALCULATOR.HTML-------------- */
+}
 
-  /* #main_calculator{
-    width: 100%;
-    height: 600px;
-  } */
-  .sec_calculator{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    height: auto;
-  }
-  #theform {
-    display:inline-block;
-    padding:20px;
-    border:1px solid #666;
-    border-radius:10px;
-    background-color:#fff;
-    color:#666;
-    box-shadow:inset 0 0 20px #999,3px 3px 3px #666;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
- }
- .calculator_text{
-   text-align: center;
-   padding: 20px;
- }
- .sec_calculator p{
-   text-align: center;
-   width: 60%;
-   margin-left: 20%;
-   margin-right: 20%;
-   margin-bottom: 50px;
- }
- .calculator_p{
-   height: 120px;
- }
- .calculator_form{
-   text-align: center;
-   margin-top: 40px;
- }
- .sec_calculator a{
-   text-decoration: none;
- }
+#v1 {
+  grid-area: v1;
+  width: 100%;
+  height: 100%;
+}
+
+#v2 {
+  grid-area: v2;
+  width: 100%;
+  height: 100%;
+}
+
+#v3 {
+  grid-area: v3;
+  width: 100%;
+  height: 100%;
+}
+
+#music_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+}
+
+#music_section_soundcloud {
+  margin-top: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#music_section_soundcloud div {
+  width: 45%;
+  height: 90%;
+}
+
+#music_soundcloud_p {
+  font-size: 30px;
+  text-align: justify;
+  overflow-wrap: break-word;
+  padding: 10px;
+}
+
+#music_section_reviews {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.music_reviews {
+  height: 200px;
+  width: 300px;
+  border: 3px solid black;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* -------------------MUSIC.HTML-------------- */
+/* -------------------CALCULATOR.HTML-------------- */
+/* #main_calculator{
+  width: 100%;
+  height: 600px;
+} */
+.sec_calculator {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+#theform {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #666;
+  box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.calculator_text {
+  text-align: center;
+  padding: 20px;
+}
+
+.sec_calculator p {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+}
+
+.calculator_p {
+  height: 120px;
+}
+
+.calculator_form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sec_calculator a {
+  text-decoration: none;
+}
+
 #theform div {
-    margin:5px 0;
- }
+  margin: 5px 0;
+}
+
 #theform label {
-    display:inline-block;
-    width:200px;
- }
+  display: inline-block;
+  width: 200px;
+}
+
 /* main h2{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-transform: capitalize;
@@ -322,21 +332,21 @@ nav ul li a{
   padding: 10px;
   padding-left: 70px;
 } */
-#main_calculator p{
+#main_calculator p {
   font-size: 20px;
   height: 50px;
   padding: 10px;
 }
-#main_calculator h3{
+
+#main_calculator h3 {
   font-size: 30px;
   text-transform: capitalize;
-
 }
-/* -------------------CALCULATOR.HTML-------------- */
 
+/* -------------------CALCULATOR.HTML-------------- */
 /* -------------------CONTACT.HTML-------------- */
-#contact_form{
-  font-family: 'Times New Roman', Times, serif;
+#contact_form {
+  font-family: "Times New Roman", Times, serif;
   width: 50%;
   padding: 40px;
   margin: auto;
@@ -344,100 +354,122 @@ nav ul li a{
   text-align: center;
   font-size: 25px;
   border-radius: 8%;
-  background-color: rgb(231, 231, 231);
+  background-color: #e7e7e7;
 }
-#contact_main{
+
+#contact_main {
   height: 950px;
   width: 100%;
 }
-.btn-primary{
-margin-top: 10px;
+
+.btn-contact {
+  margin-top: 10px;
+  background-color: #830a2b !important;
+  border: #120f26;
+  border-radius: 5px;
+  color: white !important;
+  padding: 3px;
 }
-form label{
+
+.btn-contact:hover {
+  transform: scale(1.05);
+  transition: all 0.6s;
+}
+
+.form-check-input:checked {
+  background-color: #830a2b !important;
+}
+
+form label {
   font-weight: bold;
 }
+
 /* -------------------CONTACT.HTML-------------- */
-
-/* -------------------------MEDIA QUERIES-------------------------------------- */
-
-@media only screen and (max-width: 1320px){
-  .div_about{
+@media only screen and (max-width: 1320px) {
+  .div_about {
     width: 40%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
   }
-  #img_about{
+
+  #img_about {
     height: 450px;
   }
-  #music_section_soundcloud{
+
+  #music_section_soundcloud {
     height: 900px;
   }
-  #music_soundcloud_p{
-  font-size: 25px;
+
+  #music_soundcloud_p {
+    font-size: 25px;
   }
 }
-
-
-@media only screen and (max-width: 1150px){
-  .div_about{
+@media only screen and (max-width: 1150px) {
+  .div_about {
     width: 40%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
   }
-  .h1_main{
+
+  .h1_main {
     font-size: 50px;
   }
-  #img_about{
+
+  #img_about {
     height: 400px;
   }
 }
-@media only screen and (max-width: 1024px){
-  nav{
+@media only screen and (max-width: 1024px) {
+  nav {
     padding: 35px;
   }
-  footer p{
+
+  footer p {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 1018px){
-  .div_about{
+@media only screen and (max-width: 1018px) {
+  .div_about {
     width: 40%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
   }
-  #img_about{
+
+  #img_about {
     height: 350px;
   }
-  #music_soundcloud_p{
+
+  #music_soundcloud_p {
     font-size: 22px;
   }
 }
-@media only screen and (max-width: 930px){
-  #contact_main{
+@media only screen and (max-width: 930px) {
+  #contact_main {
     height: 900px;
   }
 }
-@media only screen and (max-width: 900px){
-  .sec_about{
+@media only screen and (max-width: 900px) {
+  .sec_about {
     display: flex;
-   flex-direction: column-reverse;
-   padding: 10px;
+    flex-direction: column-reverse;
+    padding: 10px;
     gap: 50px;
   }
-  #bvideo{
+
+  #bvideo {
     width: 100%;
     object-fit: fill;
   }
-  #music_div{
+
+  #music_div {
     height: 300vh;
   }
-  #music_section_videos{
+
+  #music_section_videos {
     height: 1000px;
     width: 100%;
     display: grid;
-    grid-template-areas:
-    "v1"
-    "v2" "v3";
+    grid-template-areas: "v1" "v2" "v3";
     grid-template-columns: 80%;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
@@ -446,30 +478,35 @@ form label{
     margin-top: 20px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    }
-  .h1_main{
+  }
+
+  .h1_main {
     text-align: center;
     margin: auto;
     padding-left: 0;
   }
-  .div_about{
+
+  .div_about {
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
   }
-  #img_about{
+
+  #img_about {
     height: 350px;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
-  .sec_calculator p{
+
+  .sec_calculator p {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 70px;
   }
-  #music_section_soundcloud{
+
+  #music_section_soundcloud {
     margin-top: 0px;
     margin-left: 10%;
     margin-right: 10%;
@@ -477,13 +514,14 @@ form label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px
-    ;
+    row-gap: 10px;
   }
-  #music_section_soundcloud div{
+
+  #music_section_soundcloud div {
     width: 80%;
     height: 90%;
   }
+
   /* .body2{
     display: grid;
     grid-template-columns: 100%;
@@ -493,26 +531,27 @@ form label{
     "main"
     "footer";
   } */
-  .logomb{
+  .logomb {
     width: 350px;
   }
 }
-@media only screen and (max-width: 800px){
-  nav{
+@media only screen and (max-width: 800px) {
+  nav {
     padding: 10px;
     padding-right: 30px;
   }
-  
-  .menu_img{
+
+  .menu_img {
     height: 35px;
     width: 30px;
   }
-  #contact_form{
+
+  #contact_form {
     width: 70%;
     font-size: 25px;
   }
-@media only screen and (max-width: 801px){
-  
+}
+@media only screen and (max-width: 801px) {
   /* .body1{
     display: grid;
     grid-template-columns: 100%;
@@ -540,11 +579,11 @@ form label{
     "main"
     "footer";
   } */
-  .logomb{
+  .logomb {
     width: 300px;
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   /* #contact_form{
     font-size: 15px;
     } */
@@ -554,70 +593,80 @@ form label{
   /* #contact_main{
     height: 900px;
   } */
-  nav ul li a{
+  nav ul li a {
     font-size: 17px;
   }
 }
-@media only screen and (max-width: 712px){
-  .sec_about{
+@media only screen and (max-width: 712px) {
+  .sec_about {
     display: flex;
-   flex-direction: column-reverse;
-   padding: 10px;
+    flex-direction: column-reverse;
+    padding: 10px;
     gap: 30px;
   }
-  .div_about{
+
+  .div_about {
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 15px;
   }
-  #img_about{
+
+  #img_about {
     height: 350px;
     text-align: center;
   }
-  .sec_calculator p{
+
+  .sec_calculator p {
     margin-bottom: 85px;
   }
-  #music_soundcloud_p{
+
+  #music_soundcloud_p {
     font-size: 18px;
   }
-  .logomb{
+
+  .logomb {
     width: 270px;
   }
-  .calculator_p{
+
+  .calculator_p {
     height: 150px;
   }
 }
-
-@media only screen and (max-width: 665px){
-  .logomb{
+@media only screen and (max-width: 665px) {
+  .logomb {
     width: 250px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 570px){
-  .calculator_p{
+@media only screen and (max-width: 570px) {
+  .calculator_p {
     height: 170px;
   }
+
   #main_calculator p {
     font-size: 18px;
+  }
 }
-}
-@media only screen and (max-width: 506px){
-  .sec_calculator p{
+@media only screen and (max-width: 506px) {
+  .sec_calculator p {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 50px;
   }
-  #music_section_soundcloud div{
+
+  #music_section_soundcloud div {
     height: 45%;
   }
-  #music_section_reviews{
+
+  #music_section_reviews {
     font-size: 15px;
   }
-  .music_reviews{
+
+  .music_reviews {
     height: 200px;
     width: 300px;
     border: 3px solid black;
@@ -625,104 +674,116 @@ form label{
     padding: 20px;
   }
 }
-@media only screen and (max-width: 492px){
-  .header1{
+@media only screen and (max-width: 492px) {
+  .header1 {
     width: 100%;
   }
-  
 }
-@media only screen and (max-width: 480px){
-  nav{
+@media only screen and (max-width: 480px) {
+  nav {
     padding: 5px;
   }
-  .menu_img{
+
+  .menu_img {
     height: 20px;
     width: 20px;
   }
-  .header2{
+
+  .header2 {
     height: 85px;
   }
 }
-@media only screen and (max-width: 472px){
-  .sec_about{
+@media only screen and (max-width: 472px) {
+  .sec_about {
     display: flex;
-   flex-direction: column-reverse;
-   padding: 10px;
+    flex-direction: column-reverse;
+    padding: 10px;
     gap: 25px;
   }
-  .h1_main{
+
+  .h1_main {
     font-size: 40px;
   }
-  .div_about{
+
+  .div_about {
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 15px;
   }
-  #img_about{
+
+  #img_about {
     height: 300px;
     text-align: center;
   }
+
   /* #main_about{
     height: 900px;
     width: 100%;
   } */
-  .sec_calculator p{
+  .sec_calculator p {
     margin-bottom: 50px;
   }
-   #music_soundcloud_p{
+
+  #music_soundcloud_p {
     font-size: 15px;
   }
 }
-
-@media only screen and (max-width: 472px){
-  .sec_calculator p{
+@media only screen and (max-width: 472px) {
+  .sec_calculator p {
     margin-bottom: 70px;
   }
+
   #theform {
-    display:inline-block;
-    padding:10px;
-    border:1px solid #666;
-    border-radius:10px;
-    background-color:#fff;
-    color:#666;
-    box-shadow:inset 0 0 20px #999,3px 3px 3px #666;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #666;
+    box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
   }
- #index_section_contactnow{
-  height: 250px;
+
+  #index_section_contactnow {
+    height: 250px;
   }
-  section button{
+
+  section button {
     width: 180px;
     padding: 10px 8px;
   }
 
-  #index_section_contactnow-p{
-    font-size: 20px; 
+  #index_section_contactnow-p {
+    font-size: 20px;
   }
-  #contact_form{
+
+  #contact_form {
     width: 90%;
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   #theform {
-    display:inline-block;
-    padding:4px;
-    border:1px solid #666;
-    border-radius:10px;
-    background-color:#fff;
-    color:#666;
-    box-shadow:inset 0 0 20px #999,3px 3px 3px #666;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #666;
+    box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
     width: 260px;
- }
- .calculator_p{
-  height: 220px;
-}
- #music_soundcloud_p{
-  font-size: 15px;
   }
+
+  .calculator_p {
+    height: 220px;
+  }
+
+  #music_soundcloud_p {
+    font-size: 15px;
+  }
+
   /* .body3{
     display: grid;
     grid-template-columns: 100%;
@@ -751,48 +812,56 @@ form label{
     "footer";
   } */
 }
-@media only screen and (max-width: 382px){
-  #img_about{
+@media only screen and (max-width: 382px) {
+  #img_about {
     height: 220px;
     text-align: center;
   }
-  .sec_about{
+
+  .sec_about {
     gap: 15px;
   }
-  .h1_main{
+
+  .h1_main {
     font-size: 35px;
   }
-  .sec_calculator p{
+
+  .sec_calculator p {
     margin-bottom: 90px;
   }
 }
-@media only screen and (max-width: 360px){
-  nav{
+@media only screen and (max-width: 360px) {
+  nav {
     padding: 5px;
   }
-  .menu_img{
+
+  .menu_img {
     height: 20px;
     width: 20px;
   }
-  .logomb{
+
+  .logomb {
     width: 220px;
   }
-  .calculator_p{
+
+  .calculator_p {
     height: 230px;
   }
 }
-@media only screen and (max-width: 334px){
-  .sec_calculator p{
+@media only screen and (max-width: 334px) {
+  .sec_calculator p {
     margin-bottom: 110px;
   }
-  #main_index{
+
+  #main_index {
     height: 100px;
   }
-  .logomb{
+
+  .logomb {
     width: 200px;
   }
 }
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 321px) {
   /* .body1{
     display: grid;
     grid-template-columns: 100%;
@@ -802,5 +871,6 @@ form label{
     "main"
     "footer";
   } */
-  
-  }}
+}
+
+/*# sourceMappingURL=styles.css.map */
