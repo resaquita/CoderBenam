@@ -7,7 +7,8 @@
 #bvideo {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   left: 0;
   right: 0;
@@ -25,33 +26,10 @@ body {
   overflow: hidden;
 }
 
-#main_quote {
-  font-family: "Tangerine", cursive;
-  font-size: 60px;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-
-#main_quote_signature {
-  font-family: "Tangerine", cursive;
-  font-size: 35px;
-  color: white;
-  text-transform: capitalize;
-  text-shadow: 1px 1px 2px black;
-}
-
-#main_div_box {
-  width: 100%;
-  height: 140px;
-  background-color: rgba(128, 128, 128, 0.5);
-}
-
 #index_section_contactnow {
   background-color: white;
-  width: 100%;
-  height: 300px;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
 }
 
@@ -64,7 +42,7 @@ section button a {
   text-decoration: none;
   color: white;
   font-size: x-large;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
 }
 
@@ -80,13 +58,15 @@ section button {
 }
 
 .contact_button:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   background-color: #f0f0f0;
 }
 
 #index_section_contactnow-p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   margin-bottom: 70px;
 }
@@ -100,13 +80,16 @@ section button {
   color: #830a2b;
 }
 
+/* ----------INDEX----------- */
 /* -------------------HEADER-------------- */
 .header1 {
   width: 100%;
 }
 
 .logomb:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -124,8 +107,10 @@ nav ul li a:hover {
 }
 
 /* -------------------HEADER-------------- */
+/* -------------------FOOTER-------------- */
 .footer1 {
   background-color: rgba(0, 18, 182, 0.03);
+  margin-top: 30px;
 }
 
 .footer2 {
@@ -133,16 +118,10 @@ nav ul li a:hover {
   color: #fff;
 }
 
+/* -------------------FOOTER-------------- */
 /* -------------------ABOUT.HTML-------------- */
-.sec_about {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-bottom: 20px;
-}
-
 .h1_main {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-transform: capitalize;
   text-shadow: 1px 3px 10px gray;
   font-size: 70px;
@@ -153,10 +132,23 @@ nav ul li a:hover {
   padding-bottom: 30px;
   padding-right: 0;
   color: #830a2b;
-  animation-name: aparecer;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes aparecer {
@@ -167,74 +159,29 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
+
 .div_about {
-  width: 40%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
 }
 
 #img_about {
   border: 3px solid black;
   border-radius: 3%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: auto;
+  width: 100%;
 }
 
 /* -------------------ABOUT.HTML-------------- */
 /* -------------------MUSIC.HTML-------------- */
-#music_section_videos {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-areas: "v1 v1" "v2 v3";
-  grid-template-columns: 35% 35%;
-  grid-template-rows: 60% 40%;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+.video1 {
+  padding: 20px;
 }
 
-#v1 {
-  grid-area: v1;
-  width: 100%;
-  height: 100%;
-}
-
-#v2 {
-  grid-area: v2;
-  width: 100%;
-  height: 100%;
-}
-
-#v3 {
-  grid-area: v3;
-  width: 100%;
-  height: 100%;
-}
-
-#music_div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200vh;
-}
-
-#music_section_soundcloud {
-  margin-top: 0px;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 900px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#music_section_soundcloud div {
-  width: 45%;
-  height: 90%;
+.music_row {
+  margin-bottom: 30px !important;
 }
 
 #music_soundcloud_p {
@@ -248,9 +195,14 @@ nav ul li a:hover {
   font-size: 15px;
   text-align: center;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -265,17 +217,6 @@ nav ul li a:hover {
 
 /* -------------------MUSIC.HTML-------------- */
 /* -------------------CALCULATOR.HTML-------------- */
-/* #main_calculator{
-  width: 100%;
-  height: 600px;
-} */
-.sec_calculator {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  height: auto;
-}
-
 #theform {
   display: inline-block;
   padding: 20px;
@@ -283,7 +224,8 @@ nav ul li a:hover {
   border-radius: 10px;
   background-color: #fff;
   color: #666;
-  box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
+  -webkit-box-shadow: inset 0 0 20px #999,3px 3px 3px #666;
+          box-shadow: inset 0 0 20px #999,3px 3px 3px #666;
   margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
@@ -300,10 +242,6 @@ nav ul li a:hover {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 50px;
-}
-
-.calculator_p {
-  height: 120px;
 }
 
 .calculator_form {
@@ -324,17 +262,8 @@ nav ul li a:hover {
   width: 200px;
 }
 
-/* main h2{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-transform: capitalize;
-  text-shadow: 1px 3px 10px gray ;
-  font-size: 70px;
-  padding: 10px;
-  padding-left: 70px;
-} */
 #main_calculator p {
   font-size: 20px;
-  height: 50px;
   padding: 10px;
 }
 
@@ -346,8 +275,7 @@ nav ul li a:hover {
 /* -------------------CALCULATOR.HTML-------------- */
 /* -------------------CONTACT.HTML-------------- */
 #contact_form {
-  font-family: "Times New Roman", Times, serif;
-  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
   padding: 40px;
   margin: auto;
   margin-bottom: 30px;
@@ -355,11 +283,6 @@ nav ul li a:hover {
   font-size: 25px;
   border-radius: 8%;
   background-color: #e7e7e7;
-}
-
-#contact_main {
-  height: 950px;
-  width: 100%;
 }
 
 .btn-contact {
@@ -372,7 +295,9 @@ nav ul li a:hover {
 }
 
 .btn-contact:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
 
@@ -387,269 +312,172 @@ form label {
 /* -------------------CONTACT.HTML-------------- */
 @media only screen and (max-width: 1320px) {
   .div_about {
-    width: 40%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
-
-  #img_about {
-    height: 450px;
-  }
-
-  #music_section_soundcloud {
-    height: 900px;
-  }
-
   #music_soundcloud_p {
     font-size: 25px;
   }
 }
+
 @media only screen and (max-width: 1150px) {
   .div_about {
     width: 40%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
-
   .h1_main {
     font-size: 50px;
   }
-
-  #img_about {
-    height: 400px;
-  }
 }
+
 @media only screen and (max-width: 1024px) {
   nav {
     padding: 35px;
   }
-
   footer p {
     font-size: 20px;
   }
 }
+
 @media only screen and (max-width: 1018px) {
   .div_about {
     width: 40%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
-
-  #img_about {
-    height: 350px;
-  }
-
   #music_soundcloud_p {
     font-size: 22px;
   }
 }
-@media only screen and (max-width: 930px) {
-  #contact_main {
-    height: 900px;
+
+@media only screen and (max-width: 991px) {
+  .video2 {
+    padding: 20px;
+  }
+  .iframe_music {
+    width: 100%;
+    height: 400px;
+  }
+  .soundcloud {
+    height: 400px;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .sec_about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 10px;
     gap: 50px;
   }
-
   #bvideo {
     width: 100%;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
-
-  #music_div {
-    height: 300vh;
-  }
-
-  #music_section_videos {
-    height: 1000px;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "v1" "v2" "v3";
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-  }
-
   .h1_main {
     text-align: center;
     margin: auto;
     padding-left: 0;
   }
-
   .div_about {
     width: 100%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
   }
-
-  #img_about {
-    height: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
   .sec_calculator p {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 70px;
   }
-
-  #music_section_soundcloud {
-    margin-top: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-  }
-
-  #music_section_soundcloud div {
-    width: 80%;
-    height: 90%;
-  }
-
-  /* .body2{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 94% 6%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  } */
   .logomb {
     width: 350px;
   }
 }
+
 @media only screen and (max-width: 800px) {
   nav {
     padding: 10px;
     padding-right: 30px;
   }
-
   .menu_img {
     height: 35px;
     width: 30px;
   }
-
   #contact_form {
-    width: 70%;
     font-size: 25px;
   }
 }
+
 @media only screen and (max-width: 801px) {
-  /* .body1{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 60% 10%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  }
-  .body2{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 86% 8%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  }
-  .body3{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 52% 8%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  } */
   .logomb {
     width: 300px;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  /* #contact_form{
-    font-size: 15px;
-    } */
-  /* #contact_form h1{
-    font-size: 35px;
-  } */
-  /* #contact_main{
-    height: 900px;
-  } */
   nav ul li a {
     font-size: 17px;
   }
+  .iframe_music {
+    height: 300px;
+  }
 }
+
 @media only screen and (max-width: 712px) {
   .sec_about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 10px;
     gap: 30px;
   }
-
   .div_about {
     width: 100%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
   }
-
-  #img_about {
-    height: 350px;
-    text-align: center;
-  }
-
-  .sec_calculator p {
-    margin-bottom: 85px;
-  }
-
   #music_soundcloud_p {
     font-size: 18px;
   }
-
   .logomb {
     width: 270px;
   }
-
-  .calculator_p {
-    height: 150px;
-  }
 }
+
 @media only screen and (max-width: 665px) {
   .logomb {
     width: 250px;
   }
-
   nav ul li a {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 570px) {
-  .calculator_p {
-    height: 170px;
-  }
 
+@media only screen and (max-width: 570px) {
   #main_calculator p {
     font-size: 18px;
   }
+  #contact_form {
+    background-color: white;
+  }
+  .iframe_music {
+    width: 100%;
+    height: 250px;
+  }
 }
+
 @media only screen and (max-width: 506px) {
   .sec_calculator p {
     width: 90%;
@@ -657,15 +485,9 @@ form label {
     margin-right: 5%;
     margin-bottom: 50px;
   }
-
-  #music_section_soundcloud div {
-    height: 45%;
-  }
-
   #music_section_reviews {
     font-size: 15px;
   }
-
   .music_reviews {
     height: 200px;
     width: 300px;
@@ -674,65 +496,57 @@ form label {
     padding: 20px;
   }
 }
+
+@media only screen and (max-width: 494px) {
+  #music_soundcloud_p {
+    font-size: 17px;
+  }
+}
+
 @media only screen and (max-width: 492px) {
   .header1 {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 480px) {
   nav {
     padding: 5px;
   }
-
   .menu_img {
     height: 20px;
     width: 20px;
   }
-
   .header2 {
     height: 85px;
   }
 }
+
 @media only screen and (max-width: 472px) {
   .sec_about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 10px;
     gap: 25px;
   }
-
   .h1_main {
     font-size: 40px;
   }
-
   .div_about {
-    width: 100%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
   }
-
-  #img_about {
-    height: 300px;
-    text-align: center;
-  }
-
-  /* #main_about{
-    height: 900px;
-    width: 100%;
-  } */
-  .sec_calculator p {
-    margin-bottom: 50px;
-  }
-
   #music_soundcloud_p {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 472px) {
-  .sec_calculator p {
-    margin-bottom: 70px;
-  }
 
+@media only screen and (max-width: 472px) {
   #theform {
     display: inline-block;
     padding: 10px;
@@ -740,27 +554,31 @@ form label {
     border-radius: 10px;
     background-color: #fff;
     color: #666;
-    box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
+    -webkit-box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
+            box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
   }
-
-  #index_section_contactnow {
-    height: 250px;
-  }
-
   section button {
     width: 180px;
     padding: 10px 8px;
   }
-
   #index_section_contactnow-p {
     font-size: 20px;
+    margin-bottom: 0px;
   }
-
   #contact_form {
-    width: 90%;
     font-size: 15px;
   }
+  .video2 {
+    padding: 0px;
+  }
+  .video1 {
+    padding: 0px;
+  }
+  .soundcloud {
+    height: 280px;
+  }
 }
+
 @media only screen and (max-width: 400px) {
   #theform {
     display: inline-block;
@@ -769,108 +587,64 @@ form label {
     border-radius: 10px;
     background-color: #fff;
     color: #666;
-    box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
+    -webkit-box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
+            box-shadow: inset 0 0 20px #999, 3px 3px 3px #666;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
     width: 260px;
   }
-
-  .calculator_p {
-    height: 220px;
-  }
-
   #music_soundcloud_p {
     font-size: 15px;
   }
-
-  /* .body3{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 58% 8%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  }
-  .body1{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 54% 10%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  }
-  .body2{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 86% 8%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  } */
 }
+
 @media only screen and (max-width: 382px) {
   #img_about {
     height: 220px;
     text-align: center;
   }
-
   .sec_about {
     gap: 15px;
   }
-
   .h1_main {
     font-size: 35px;
   }
-
-  .sec_calculator p {
-    margin-bottom: 90px;
-  }
 }
+
 @media only screen and (max-width: 360px) {
   nav {
     padding: 5px;
   }
-
   .menu_img {
     height: 20px;
     width: 20px;
   }
-
   .logomb {
     width: 220px;
   }
-
-  .calculator_p {
-    height: 230px;
+  #music_soundcloud_p {
+    font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 334px) {
-  .sec_calculator p {
-    margin-bottom: 110px;
+  .index_but {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
   }
-
-  #main_index {
-    height: 100px;
+  .index_container {
+    padding-top: 0px !important;
   }
-
   .logomb {
     width: 200px;
   }
+  .iframe_music {
+    width: 100%;
+    height: 180px;
+  }
+  .soundcloud {
+    height: 220px;
+  }
 }
-@media only screen and (max-width: 321px) {
-  /* .body1{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:5% 54% 10%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  } */
-}
-
 /*# sourceMappingURL=styles.css.map */

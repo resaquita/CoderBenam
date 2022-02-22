@@ -43,42 +43,50 @@
         </div>
     </header>
     <main class="main1" id="contact_main">
-        <h1 class="h1_main">contact form</h1>
-        <div id="contact_form">
-            <form action="/action_page.php">
-                <div class="mb-3 mt-3">
-                  <label for="Name" class="form-label">Name</label>
-                  <input type="Name" class="form-control" id="text" placeholder="Name or Company Name" name="name">
-                </div>
-                <div class="mb-3 mt-3">
-                  <label for="email" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                </div>
-                <label for="Hear" class="form-label">How did you get here?</label>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Youtube
-                    <label class="form-check-label" for="radio1"></label>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="h1_main">contact form</h1>
+            </div>
+            <div id="contact_form" class="col-lg-8">
+              <form action="/action_page.php">
+                  <div class="mb-3 mt-3">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="Name" class="form-control" id="text" placeholder="Name or Company Name" name="name">
                   </div>
+                  <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <label for="Hear" class="form-label">How did you get here?</label>
                   <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Soundcloud
-                    <label class="form-check-label" for="radio2"></label>
+                      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Youtube
+                      <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Soundcloud
+                      <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Instagram
+                      <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Other
+                      <label class="form-check-label" for="radio2"></label>
+                      <input type="text" class="form-control Specify" placeholder="Specify">
+                    </div>
+                  <div>
+                      <label for="comment">Message:</label>
+                      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                   </div>
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Instagram
-                    <label class="form-check-label" for="radio2"></label>
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Other
-                    <label class="form-check-label" for="radio2"></label>
-                    <input type="text" class="form-control Specify" placeholder="Specify">
-                  </div>
-                <div>
-                    <label for="comment">Message:</label>
-                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                </div>
-                <button type="submit" class="btn btn-contact">Submit</button>
-              </form>
+                  <button type="submit" class="btn btn-contact">Submit</button>
+                </form>
+            </div>
+          </div>
         </div>
+      </section>
     </main>
     <footer class="text-center text-lg-start footer1 text-muted">
         <section class="d-flex justify-content-center justify-content-lg-around p-4 border-bottom">
@@ -100,7 +108,7 @@
             </a>
           </div>
         </section>
-        <section class="">
+        <section>
           <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -115,7 +123,6 @@
                 </p>
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                
                 <p>
                   <a href="music.html" class="text-reset">Music</a>
                 </p>
