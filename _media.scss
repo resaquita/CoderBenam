@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 1320px){
   .div_about{
     font-family: 'Times New Roman', Times, serif;
@@ -6,6 +8,11 @@
   #music_soundcloud_p{
     font-size: 25px;
   }
+}
+@media only screen and (max-width: 1190px){
+    .index_banner h1{
+      font-size: 70px;
+    }
 }
 @media only screen and (max-width: 1150px){
   .div_about{
@@ -74,10 +81,17 @@
     margin-right: 15%;
     margin-bottom: 70px;
   }
-    .logomb{
-      width: 350px;
-    }
+  .logomb{
+    width: 350px;
   }
+  .index_banner{
+    height: 110px;
+    }
+  .index_banner h1{
+    font-size: 50px;
+    line-height: 110px;
+  }
+}
   @media only screen and (max-width: 800px){
     nav{
       padding: 10px;
@@ -100,6 +114,9 @@
 @media only screen and (max-width: 768px){
   nav ul li a{
     font-size: 17px;
+  }
+  .about_article{
+    font-size: 20px;
   }
   .iframe_music{
     height: 300px;
@@ -130,6 +147,14 @@
   }
   nav ul li a{
     font-size: 15px;
+  }
+  .index_banner{
+    height: 116px;
+    }
+  .index_banner h1{
+      line-height: 58px;
+      padding-left: 50px;
+      padding-right: 50px;
   }
 }
 @media only screen and (max-width: 570px){
@@ -232,6 +257,14 @@
   .soundcloud {
     height: 280px;
   }
+  .index_banner{
+    height: 80px;
+    top: 30vw;
+    }
+  .index_banner h1{
+    font-size: 40px;
+      line-height: 40px;
+  }
 }
 @media only screen and (max-width: 400px){
   #theform {
@@ -276,6 +309,13 @@
   }
   #music_soundcloud_p {
     font-size: 14px;
+  }
+  .index_banner{
+    height: 80px;
+    }
+  .index_banner h1{
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 @media only screen and (max-width: 334px) {

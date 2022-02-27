@@ -7,11 +7,27 @@
   $color3: #2d488f;
   $color4: #91b4ec;
   $color5: #120f26;
+  $height: 200px;
+  $lh: $height/2; 
 
+@mixin sizes ($wid, $hei){
+  width: $wid;
+  height: $hei;
+}
+@mixin format ($mar, $pad){
+  margin: $mar;
+  padding: $pad;
+}
+
+#paragraph{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  text-align-last: center;
+
+}
   /* ----------INDEX----------- */
   #bvideo {
-    width: 100%;
-    height: auto;
+    @include sizes(100%, auto );
     object-fit: cover;
     overflow: hidden;
     left: 0;
@@ -19,6 +35,24 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+  }
+  .index_banner{
+  text-align: center;
+  position: absolute;
+  top: 25vw;
+  height: $height;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  }
+  .index_banner h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: $lh;
+    text-transform: uppercase;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-shadow: 1px 3px 10px rgb(0, 0, 0) ;
+    line-height: $height;
   }
   body{
     background-color: white;
@@ -36,6 +70,10 @@
   #index_section_contactnow div{
     padding: 20px;
   }
+  #index_section_contactnow p{
+    @extend #index_section_contactnow-p;
+    margin-bottom: 0 !important;
+  }
   section button a{
     text-transform: capitalize;
     text-decoration: none;
@@ -48,7 +86,7 @@
     color: $color2 !important;
   }
   section button{
-    width: 200px;
+    @include sizes(200px, 55px );
     padding: 10px 10px;
     text-align: center;
     border: 2px solid black !important;
@@ -132,16 +170,24 @@
     opacity: 1;
   }
   }
+  .about_article{
+    @extend #paragraph;
+    font-size: 25px;
+  }
   .div_about{
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
+  }
+  #main_about h2{
+    text-transform: capitalize;
+    @extend #paragraph;
+    font-weight: bold;
   }
   #img_about{
     border: 3px solid black;
     border-radius: 3%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: auto;
-    width: 100%;
+    @include sizes(100%, auto );
   }
   /* -------------------ABOUT.HTML-------------- */
 
@@ -169,14 +215,25 @@
       flex-wrap: wrap;
       margin-bottom: 30px;
   }
-  .music_reviews{
-      height: 200px;
-      width: 300px;
+
+  $reviews: (
+    review1: 1%,
+    review2: 5%,
+    review3: 13%,
+    review4: 20%,
+  );
+
+  @each $review, $clr in $reviews{
+    .music--#{$review} {
+      @include sizes(300px, 200px);
       border: 3px solid black;
       margin: 10px;
       padding: 20px;
       overflow: hidden;
+      background-color: darken($color: $color4, $amount: $clr);
   }
+}
+
   /* -------------------MUSIC.HTML-------------- */
     
   /* -------------------CALCULATOR.HTML-------------- */
@@ -221,7 +278,7 @@
     font-size: 20px;
     padding: 10px;
   }
-  #main_calculator h3{
+  #main_calculator h2{
     font-size: 30px;
     text-transform: capitalize;
   }
@@ -230,9 +287,8 @@
 
   /* -------------------CONTACT.HTML-------------- */
   #contact_form{
-    font-family: 'Times New Roman', Times, serif;
-    padding: 40px;
-    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include format(auto, 40px );
     margin-bottom: 30px;
     text-align: center;
     font-size: 25px;

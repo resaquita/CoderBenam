@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+#paragraph, .about_article, #main_about h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  text-align-last: center;
+}
+
 /* ----------INDEX----------- */
 #bvideo {
   width: 100%;
@@ -15,6 +21,26 @@
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.index_banner {
+  text-align: center;
+  position: absolute;
+  top: 25vw;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.index_banner h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-shadow: 1px 3px 10px black;
+  line-height: 200px;
 }
 
 body {
@@ -37,6 +63,10 @@ body {
   padding: 20px;
 }
 
+#index_section_contactnow p {
+  margin-bottom: 0 !important;
+}
+
 section button a {
   text-transform: capitalize;
   text-decoration: none;
@@ -52,6 +82,7 @@ section button a:hover {
 
 section button {
   width: 200px;
+  height: 55px;
   padding: 10px 10px;
   text-align: center;
   border: 2px solid black !important;
@@ -65,7 +96,7 @@ section button {
   background-color: #f0f0f0;
 }
 
-#index_section_contactnow-p {
+#index_section_contactnow-p, #index_section_contactnow p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   margin-bottom: 70px;
@@ -160,9 +191,18 @@ nav ul li a:hover {
   }
 }
 
+.about_article {
+  font-size: 25px;
+}
+
 .div_about {
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
+}
+
+#main_about h2 {
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 #img_about {
@@ -170,8 +210,8 @@ nav ul li a:hover {
   border-radius: 3%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
 /* -------------------ABOUT.HTML-------------- */
@@ -206,13 +246,44 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 
-.music_reviews {
-  height: 200px;
+.music--review1 {
   width: 300px;
+  height: 200px;
   border: 3px solid black;
   margin: 10px;
   padding: 20px;
   overflow: hidden;
+  background-color: #8db1eb;
+}
+
+.music--review2 {
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #7ba5e8;
+}
+
+.music--review3 {
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #588de2;
+}
+
+.music--review4 {
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #3a79dd;
 }
 
 /* -------------------MUSIC.HTML-------------- */
@@ -267,7 +338,7 @@ nav ul li a:hover {
   padding: 10px;
 }
 
-#main_calculator h3 {
+#main_calculator h2 {
   font-size: 30px;
   text-transform: capitalize;
 }
@@ -275,9 +346,9 @@ nav ul li a:hover {
 /* -------------------CALCULATOR.HTML-------------- */
 /* -------------------CONTACT.HTML-------------- */
 #contact_form {
-  font-family: 'Times New Roman', Times, serif;
-  padding: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: auto;
+  padding: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 25px;
@@ -317,6 +388,12 @@ form label {
   }
   #music_soundcloud_p {
     font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .index_banner h1 {
+    font-size: 70px;
   }
 }
 
@@ -400,6 +477,13 @@ form label {
   .logomb {
     width: 350px;
   }
+  .index_banner {
+    height: 110px;
+  }
+  .index_banner h1 {
+    font-size: 50px;
+    line-height: 110px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -425,6 +509,9 @@ form label {
 @media only screen and (max-width: 768px) {
   nav ul li a {
     font-size: 17px;
+  }
+  .about_article {
+    font-size: 20px;
   }
   .iframe_music {
     height: 300px;
@@ -462,6 +549,14 @@ form label {
   }
   nav ul li a {
     font-size: 15px;
+  }
+  .index_banner {
+    height: 116px;
+  }
+  .index_banner h1 {
+    line-height: 58px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -561,7 +656,7 @@ form label {
     width: 180px;
     padding: 10px 8px;
   }
-  #index_section_contactnow-p {
+  #index_section_contactnow-p, #index_section_contactnow p {
     font-size: 20px;
     margin-bottom: 0px;
   }
@@ -576,6 +671,14 @@ form label {
   }
   .soundcloud {
     height: 280px;
+  }
+  .index_banner {
+    height: 80px;
+    top: 30vw;
+  }
+  .index_banner h1 {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -625,6 +728,13 @@ form label {
   }
   #music_soundcloud_p {
     font-size: 14px;
+  }
+  .index_banner {
+    height: 80px;
+  }
+  .index_banner h1 {
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 
