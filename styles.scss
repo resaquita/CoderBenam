@@ -25,7 +25,7 @@
   text-align-last: center;
 
 }
-/* ----------INDEX----------- */
+/* ----------INDEX START----------- */
 #bvideo {
   @include sizes(100%, auto );
   object-fit: cover;
@@ -112,10 +112,10 @@ section button{
 .link:hover{
   color: $color1;
 }
-/* ----------INDEX----------- */
+/* ----------INDEX END----------- */
 
 
-/* -------------------HEADER-------------- */
+/* -------------------HEADER START-------------- */
 .header1{
   width: 100%;
 }
@@ -133,10 +133,10 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(177, 177, 177) !important;
 }
-/* -------------------HEADER-------------- */
+/* -------------------HEADER END-------------- */
 
 
-/* -------------------FOOTER-------------- */
+/* -------------------FOOTER START-------------- */
 .footer1{
   background-color: rgba(0, 18, 182, 0.03);
   margin-top: 30px;
@@ -145,10 +145,10 @@ nav ul li a:hover{
     background-color: $color5;
     color: #fff;
 }
-/* -------------------FOOTER-------------- */
+/* -------------------FOOTER END-------------- */
 
   
-/* -------------------ABOUT.HTML-------------- */
+/* -------------------ABOUT.HTML START-------------- */
 .h1_main{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-transform: capitalize;
@@ -193,10 +193,10 @@ nav ul li a:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @include sizes(100%, auto );
 }
-/* -------------------ABOUT.HTML-------------- */
+/* -------------------ABOUT.HTML END-------------- */
 
   
-/* -------------------MUSIC.HTML-------------- */
+/* -------------------MUSIC.HTML START-------------- */
 .video1{
   padding: 20px;
 }
@@ -237,10 +237,10 @@ $reviews: (
   }
 }
 
-/* -------------------MUSIC.HTML-------------- */
+/* -------------------MUSIC.HTML END-------------- */
     
 
-/* -------------------CALCULATOR.HTML-------------- */
+/* -------------------CALCULATOR.HTML START-------------- */
 #theform {
     display:inline-block;
     padding:20px;
@@ -287,10 +287,10 @@ $reviews: (
   font-size: 30px;
   text-transform: capitalize;
 }
-/* -------------------CALCULATOR.HTML-------------- */
+/* -------------------CALCULATOR.HTML END-------------- */
   
 
-/* -------------------CONTACT.HTML-------------- */
+/* -------------------CONTACT.HTML START-------------- */
 #contact_form{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   @include format(auto, 40px );
@@ -323,6 +323,6 @@ $reviews: (
 form label{
   font-weight: bold;
 }
-/* -------------------CONTACT.HTML-------------- */
+/* -------------------CONTACT.HTML END-------------- */
 
 @import "_media"
